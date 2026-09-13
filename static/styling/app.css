@@ -1,0 +1,289 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Caladea', serif;
+
+        margin: 0;
+        padding: 0;
+
+        background-color: #f5f7fa;
+        color: #333;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Caladea', serif;
+    }
+
+    h2,
+    h3 {
+        color: #1f6f5b;
+    }
+
+    h4 {
+        color: #555;
+    }
+
+    footer {
+        padding: 20px;
+        color: white;
+        background-color: #174f42;
+
+        text-align: center;
+        font-weight: bold;
+
+        margin-top: 20px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    nav a {
+        font-size: 17px;
+        font-weight: 400;
+
+        text-decoration: none;
+        color: white;
+
+        transition: 0.2s;
+    }
+
+    nav a:hover {
+        font-weight: bold;
+    }
+
+    .profile header {
+        text-align: center;
+    }
+
+    .profile figure {
+        margin: 20px 0;
+    }
+
+    .profile figcaption {
+        margin-top: 8px;
+
+        font-size: 14px;
+        color: #666;
+    }
+
+    .profile img {
+        width: 200px;
+        max-width: 100%;
+
+        border-radius: 8px;
+    }
+
+    .featured-image {
+        width: 100%;
+        max-height: 300px;
+
+        object-fit: cover;
+        object-position: center;
+
+        border-radius: 6px;
+        margin-bottom: 15px;
+    }
+
+    .card {
+        background-color: white;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+
+        padding: 25px;
+    }
+
+    .jumbotron {
+        font-size: 20px;
+        padding: 60px 20px;
+
+        background-color: #1f6f5b;
+
+        text-align: center;
+        color: white;
+    }
+
+    .jumbotron h1 {
+        margin: 0 0 10px;
+        font-size: 42px;
+    }
+
+    .jumbotron p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    nav ul {
+        padding-inline: 4rem;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 2rem;
+        
+        margin: 0;
+    }
+
+    nav li {
+        list-style-type: none;
+    }
+
+    nav {
+        background-color: #174f42;
+        padding: 5px;
+
+        position: sticky;
+        top: 0;
+
+        z-index: 1000;
+    }
+
+    main {
+        padding: 20px;
+        
+        display: flex;
+        gap: 1.5rem;
+
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #content {
+        flex: 5;
+
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1.5rem;
+    }
+
+    aside {
+        flex: 1;
+    }
+
+    article p {
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    #jenis-jenis section {
+        margin-top: 35px;
+        margin-bottom: 10px;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    #jenis-jenis section:first-of-type {
+        border-top: none;
+        margin-top: 20px;
+    }
+
+    section h3 {
+        margin-top: 10px;
+    }
+
+    section h4 {
+        margin-bottom: 5px;
+    }
+
+    #cara-memulai > img {
+        width: 100%;
+        max-height: 300px;
+
+        object-fit: cover;
+        object-position: center;
+
+        border-radius: 6px;
+
+        margin-bottom: 15px;
+    }
+
+    table {
+        width: 100%;
+
+        border-collapse: collapse;
+
+        margin-top: 15px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+
+        border-bottom: 1px solid #ddd;
+
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        width: 40%;
+    }
+
+    /* Perangkat dengan lebar layar 1200px dan dibawahnya */
+    @media screen and (max-width: 1200px) {
+        main {
+            flex-flow: column nowrap;
+        }
+
+        main aside {
+            align-self: center;
+            width: 100%;
+        }
+
+        .profile {
+            width: 100%;
+        }
+    }
+
+    /* Perangkat dengan lebar layar 768px dan dibawahnya */
+    @media screen and (max-width: 768px) {
+        nav ul {
+            padding-inline: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            font-size: 15px;
+        }
+
+        main {
+            padding: 15px;
+        }
+
+        .card {
+            padding: 18px;
+        }
+
+        .jumbotron {
+            padding: 45px 15px;
+        }
+
+        .jumbotron h1 {
+            font-size: 34px;
+        }
+
+        .jumbotron p {
+            font-size: 16px;
+        }
+
+        .featured-image,
+        #cara-memulai > img {
+            max-height: 220px;
+        }
+
+        article p {
+            text-align: left;
+        }
+
+        main aside {
+            align-self: stretch;
+        }
+    }
